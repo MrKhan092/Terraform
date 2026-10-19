@@ -5,11 +5,12 @@ provider "aws" {
 #   secret_key = ""
 }
 
-resource "aws_instance" "my_first_terraform" {
+
+resource "aws_instance" "my_second_terraform" {
   ami           = "ami-0b6d9d3d33ba97d99"
   instance_type = "t3.micro"
 
   tags = {
-    Name = "HelloWorld"
+    Name = "HelloWorld2"
   }
 }
